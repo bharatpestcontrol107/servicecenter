@@ -4,6 +4,7 @@ import ServiceGrid from "./components/ServiceGrid";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import ContactForm from "./components/ContactForm";
 
 export default function Page() {
 	return (
@@ -13,6 +14,7 @@ export default function Page() {
 			<About />
 			<ServiceGrid />
 			<Process />
+			<ContactForm />
 			<Footer />
 		</main>
 	);

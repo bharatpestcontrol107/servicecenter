@@ -27,6 +27,9 @@ export default function Navbar() {
 					<Link href="#services" className="hover:text-ink-900">
 						Services
 					</Link>
+					<Link href="#contact" className="hover:text-ink-900">
+						Contact
+					</Link>
 					<Link href="/privacy-policy" className="hover:text-ink-900">
 						Privacy Policy
 					</Link>

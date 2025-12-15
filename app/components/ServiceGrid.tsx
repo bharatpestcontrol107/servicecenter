@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { PHONE_NUMBER } from "../lib/constants";
 
@@ -54,6 +56,13 @@ const services: Service[] = [
 ];
 
 export default function ServiceGrid() {
+	const handleCardClick = () => {
+		const contactSection = document.getElementById("contact");
+		if (contactSection) {
+			contactSection.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<section id="services" className="bg-sand-50 px-6 py-14 sm:px-10 lg:px-16">
 			<div className="mx-auto max-w-6xl space-y-8">
@@ -80,7 +89,8 @@ export default function ServiceGrid() {
 					{services.map((service) => (
 						<article
 							key={service.title}
-							className="glow-card h-full overflow-hidden flex flex-col">
+							onClick={handleCardClick}
+							className="glow-card h-full overflow-hidden flex flex-col cursor-pointer transition-transform hover:scale-105">
 							<div className="relative h-48 w-full bg-ink-100">
 								<Image
 									src={service.image}

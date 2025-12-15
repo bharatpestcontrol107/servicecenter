@@ -85,7 +85,7 @@ export default function Hero() {
 					</div>
 
 					{/* Right side - Image */}
-					<div className="relative h-96 lg:h-[32rem] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-ink-900/5">
+					<div className="relative h-96 lg:h-128 overflow-hidden rounded-2xl shadow-2xl ring-1 ring-ink-900/5">
 						<Image
 							src="/hero.png"
 							alt="Professional Technician"
@@ -93,7 +93,7 @@ export default function Hero() {
 							className="object-cover transition-transform duration-700 hover:scale-105"
 							priority
 						/>
-						<div className="absolute inset-0 bg-gradient-to-t from-ink-900/20 to-transparent"></div>
+						<div className="absolute inset-0 bg-linear-to-t from-ink-900/20 to-transparent"></div>
 					</div>
 				</div>
 			</div>

@@ -1,5 +1,27 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Contact Form Email Setup
+
+Set up environment variables for the booking form email:
+
+1. Create a `.env.local` file at the project root:
+
+```bash
+SMTP_USER=bharatpestservice@gmail.com
+SMTP_PASS=YOUR_GMAIL_APP_PASSWORD
+```
+
+2. Install dependencies and run the app:
+
+```bash
+npm install
+npm run dev
+```
+
+Notes:
+- Use a Gmail App Password for `SMTP_PASS` (recommended). Do not commit credentials.
+- The form in the hero section posts to `/api/contact` and sends an email to `SMTP_USER`.
+
 ## Getting Started
 
 First, run the development server:
